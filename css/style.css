@@ -65,7 +65,7 @@ h3 {
     background: #d65e98;
     opacity: 0.9;
     width: 700px;
-    height:700px;
+  padding: 20px;
     border-radius: 8px;
 }
 p {
@@ -80,6 +80,11 @@ p {
     justify-content: center;
     width: 550px;
     height: 60px;
+}
+.buttons-submitted {
+    display: flex;
+    justify-content: space-between;
+    
 }
 .btn {
     width: 45px;
@@ -127,7 +132,7 @@ p {
 }
 
 .btn-submit {
-    width: 70px;
+    width: 100px;
     height: 40px;
     color: #ffffff;
     background-color: #C92071;
@@ -135,6 +140,10 @@ p {
     border-radius: 8px;
     cursor: pointer;
     margin: 20px;
+}
+.fa-duotone{
+    font-size: 20px;
+    color: #ffffff;
 }
 @media screen and (max-width: 768px) {
  header {
@@ -182,8 +191,6 @@ h3 {
     flex-direction: column;
     background: #d65e98;
     opacity: 0.9;
-    width: 400px;
-    height: 450px;
     border-radius: 8px;
 }
 p {
