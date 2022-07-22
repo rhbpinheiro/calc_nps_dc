@@ -36,11 +36,10 @@ header {
     align-items: center;
     padding: 20px 0 20px 0;
 }
-.header-logo{
+.introduction{
     display: flex;
     flex-direction: column;
-    width: 600px;
-    height: 150px;
+    max-width: 600px;
     padding: 10px 0 0 20px ;
 }
 img.logo {
@@ -64,13 +63,13 @@ h3 {
     flex-direction: column;
     background: #d65e98;
     opacity: 0.9;
-    width: 700px;
-  padding: 20px;
+    max-width: 700px;
+    padding: 40px;
     border-radius: 8px;
 }
 p {
     padding: 30px;
-    width: 600px;
+    max-width: 600px;
     text-align: left;
     font-size: 20px;
     color: #ffffff;
@@ -80,11 +79,6 @@ p {
     justify-content: center;
     width: 550px;
     height: 60px;
-}
-.buttons-submitted {
-    display: flex;
-    justify-content: space-between;
-    
 }
 .btn {
     width: 45px;
@@ -131,7 +125,7 @@ p {
     background: #339933;
 }
 
-.btn-submit {
+.btn-submit{
     width: 100px;
     height: 40px;
     color: #ffffff;
@@ -141,15 +135,10 @@ p {
     cursor: pointer;
     margin: 20px;
 }
-.fa-duotone{
-    font-size: 20px;
-    color: #ffffff;
-}
 @media screen and (max-width: 768px) {
  header {
     display : flex;
-    flex-direction: column;
-    height: 110px;   
+    flex-direction: column; 
 }
 body {
     margin: 0 auto;
@@ -163,65 +152,56 @@ img.logo {
     height: 30px;   
 }
 h1 {
-    font-size: 30px
+    font-size: 30px;
 }
+.introduction{
+    max-width: 300px;
+    padding:0;
+   
+}    
 .logo-header {
     position: inherit;
     width: 135px;
     height: 45px;
     margin-bottom: 10px;
 }
-.header-logo{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 100px;
-    padding: 10px 0 0 5px;
-    
-}
 h3 {
-    color: #ffffff;
     font-size: 12px;
     padding: 5px;
 }
 .calculadora-nps-dc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #d65e98;
-    opacity: 0.9;
-    border-radius: 8px;
+    padding: 30px;
+    max-width: 400px;
 }
 p {
-    padding: 10px;
-    width: 300px;
-    text-align: left;
+    padding: 20px 0px 20px 0px;
+    max-width: 300px;
     font-size: 12px;
-    color: #ffffff;
 }
 .buttons {
-    display: flex;
-    justify-content: center;
-    width: 300px;
+    max-width: 300px;
     height: 40px;
 }
 .btn {
-    width: 35px;
+    width: 50px;
     height: 30px;
     font-size: 12px;
-    color: #ffffff;
-    background-color: #C92071;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-
+    margin: 2px;
 }
 }
 @media screen and (max-width: 460px) {
 .calculadora-nps-dc {
-    width: 350px;
-   
+    max-width: 350px;
+}
+.btn {
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+    margin: 2px;
+}
+p {
+    max-width: 300px;
+    text-align: left;
+    font-size: 12px; 
 }
 }
