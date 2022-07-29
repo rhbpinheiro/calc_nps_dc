@@ -4,11 +4,28 @@ let counterPassive = 0;
 let buttonArray = [];
 let somaArray = 0
 let total = 0;
-
+let valueButton = ''
+let arrayColors = [
+  "#d91c1a",
+  "#ed2124",
+  "#ff3333",
+  "#ff8015",
+  "#ff9933",
+  "#ffcc33",
+  "#ffc20d",
+  "#99cc33",
+  "#87b32d",
+  "#43c043",
+  "#339933",
+];
 let buttons = document.querySelectorAll(".btn");
 
 let submitButton = document.querySelector(".btn-submit");
-
+function marcar() {
+  if(valueButton !== '') {
+    buttons.style.background = arrayColors[valueButton]
+  }
+}
 for (var i = 0; i < buttons.length; i++) {
 
   let button = buttons[i];
@@ -29,7 +46,9 @@ for (var i = 0; i < buttons.length; i++) {
       counterPromoters++;
       
     }
+    return valueButton;
   }
+  marcar()
   button.addEventListener("click", voteNps);
 }
 submitButton.addEventListener("click", submitNps);
@@ -51,8 +70,8 @@ let media = somaArray / total;
  console.log(`O valor da nota de cada pergunta ${buttonArray}`);
  console.log(`total de votos é = ${total}`);
  console.log(`O percentual detratores é = ${calcularPercentual(counterDetractors)}%`);
- console.log(`O percentual detratores é = ${calcularPercentual(counterPassive)}%`);
- console.log(`O percentual detratores é = ${calcularPercentual(counterPromoters)}%`);
+ console.log(`O percentual neutros é = ${calcularPercentual(counterPassive)}%`);
+ console.log(`O percentual promotores é = ${calcularPercentual(counterPromoters)}%`);
 }
 
 
